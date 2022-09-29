@@ -1,8 +1,10 @@
 <html>
 
-    <head>
-        <title>Table Demo</title>
-    </head>
+<head>
+  <title>Plotly Demo</title>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
 
 <body>
     <center>
@@ -20,30 +22,14 @@
             <a href="plotlydemo.html">Plotlydemo</a>
         </ul>
         </center>
-   <center>
-        <h1>Table Demo</h1>
-        <table border="1">
-            <tr>
-                <th>Column 1</th>
-                <th>Column 2</th>
-            </tr>
-            <tr>
-                <td>Data 1a</td>
-                <td>Data 1b</td>
-            </tr>
-            <tr>
-                <td>Data 2a</td>
-                <td>Data 2b</td>
-            </tr>
-         </table>
-   </center>
-    
-    <footer>
-        <center>
-            <hr>
-            <p>&copy; IST 226 2022 </p>
-        </center>
-    </footer>
+  <div id="plot"></div>
+
+  <select id="selDataset">
+    <option value="dataset1">DataSet1</option>
+    <option value="dataset2">DataSet2</option>
+  </select>
+
+  <script src="plots.js"></script>
 
 </body>
 
